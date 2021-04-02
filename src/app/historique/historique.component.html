@@ -1,0 +1,57 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil>
+
+    <div id="titleAppel">
+        <h2>Appels Sortants</h2>
+    </div>
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>Numero Entrant</th>
+                <th>Numero Sortant</th>
+                <th>Duree Appel</th>
+                <th>Date Appel</th>
+            </tr>
+            
+            <tr *ngFor="let appel of historiqueE,let i = index" >
+                <td class="td-first"> {{ appel.numero_entrant }} </td>
+                <td> {{ appel.numero_sortant }} </td>
+                <td> {{ appel.dureeAppel }}s</td>
+                <td> {{ appel.date_appel }} </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div id="titleAppel">
+        <h2>Appels Entrants</h2>
+    </div>
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>Numero Entrant</th>
+                <th>Numero Sortant</th>
+                <th>Duree Appel</th>
+                <th>Date Appel</th>
+            </tr>
+            
+            <tr *ngFor="let appelS of historiqueS,let i = index" >
+                <td class="td-first"> {{ appelS.numero_entrant }} </td>
+                <td> {{ appelS.numero_sortant }} </td>
+                <td> {{ appelS.dureeAppel }}s</td>
+                <td> {{ appelS.date_appel }} </td>
+            </tr>
+            
+        </table>
+    </div>
+
+</body>
+
+<br>

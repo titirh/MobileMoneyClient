@@ -1,0 +1,128 @@
+body{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#intro{
+    display: flex;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 2vw auto 0vw 6vw;
+    color: rgb(65, 63, 61);
+}
+
+#formUpdate{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+
+    text-align: right;
+    margin: 1vw 2vw 1vw auto;
+}
+
+form{
+    align-self: center;
+    flex-grow: 1;
+
+    margin: 20px auto 20px auto;
+    box-shadow: 3px 3px 3px 3px rgb(2, 2, 2);
+    padding:  22px 110px 18px 80px;
+}
+
+label{
+    font-size: 20px;
+    color:rgb(250, 244, 248);
+    font-weight: 900;
+}
+
+input[type=text]{
+
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 15px;
+    height: 20px;
+    padding:10px 10px 10px 18px;
+    border: rgb(22, 22, 22) 3px solid;
+    font-size: 17px;
+    font-weight:400;
+}
+
+#btn-confirmer{
+    align-self: center;
+    background-color: rgb(10, 224, 28);
+    border-radius: 2px;
+    border:none;
+    padding: 17px 11px 17px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    width: 18%;
+    height: 35px;
+    margin: 15px 0px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    min-width: 90px;
+    color: rgb(0, 0, 0);
+}
+#btn-confirmer:hover{
+    background-color: rgb(7, 139, 18);
+}
+
+#btn-annuler{
+    align-self: center;
+    background-color: rgb(255, 11, 64);
+    border-radius: 2px;
+    border:none;
+    padding: 7px 11px 7px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    width: 17%;
+    margin: 15px 0px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    min-width: 90px;
+    color: rgb(7, 7, 7);
+}
+#btn-annuler:hover{
+    background-color: rgb(204, 0, 51);
+}
+
+#tabListe{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    padding: 22px;
+    border-spacing: 0px 22px;
+    box-shadow: 3px 4px 4px 4px rgb(2, 2, 2);
+}
+
+th{
+    width: 12vw;
+    padding-bottom: 15px;
+    border-bottom: whitesmoke 3px solid;
+}
+
+td{
+    width: 12vw;
+    text-align: center;
+}
+
+td.td-first{
+    border-left: rgb(255, 187, 1) 5px solid;
+}
+
+tr{
+    height: 45px;
+}

@@ -1,0 +1,19 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil>
+
+    <div id="ListeOffres"> 
+        <div id="SingleOffre" *ngFor="let m of modelMonCompte,let i = index">           
+            <div class="nomOffre"> {{ m.type_offre }} </div>
+            <div class="valeurOffre">{{ m.valeur_offre }} utilisable jusqu'au {{ m.date_expiration }}</div>
+        </div>
+    </div>
+</body>
+
+<br>

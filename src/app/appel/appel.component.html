@@ -1,0 +1,25 @@
+<ns-navigation-offre></ns-navigation-offre>
+<body> 
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil> 
+
+    <div id="formLogin">
+        <form (ngSubmit)="SubmitAppel()">
+            
+            <h3>APPEL</h3>
+
+            <label>Numero: </label>
+            <input id="i1" type="text" [(ngModel)]="num2" name="montant" ><br><br>
+
+            <label>Duree(en sec): </label>
+            <input id="i1" type="text" [(ngModel)]="duree" name="duree" ><br><br>
+
+            <input type="submit"  name="submit" value="Appeler"> <br><br>    
+        </form>
+    </div>
+</body>
+
+

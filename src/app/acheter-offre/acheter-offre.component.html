@@ -1,0 +1,35 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil>
+
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>NOM</th>
+                <th>TYPE</th>
+                <th>MONTANT</th>
+                <th>VALEUR</th>
+                <th>CODE</th>
+            </tr>
+            
+            <tr *ngFor="let offre of modelToBuy,let i = index" >
+                <td class="td-first">{{ modelToBuy[i].nom }}</td>
+                <td>{{ modelToBuy[i].type }}</td>
+                <td>{{ modelToBuy[i].montant }}ar</td>
+                <td>{{ modelToBuy[i].valeur }}</td>
+                <td>{{ modelToBuy[i].code }}</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div id="formUpdate">
+        <button id="btn-confirmer" (click)="confirmerAchatOffre(modelToBuy[0].id_offre)"> Confirmer </button> 
+        <button id="btn-annuler" (click)="annulerAchat()"> Annuler </button> 
+    </div>
+</body>

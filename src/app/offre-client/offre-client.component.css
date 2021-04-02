@@ -1,0 +1,66 @@
+body{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#intro{
+    display: flex;
+    width: 50%;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 10px auto 0vw 10vw;
+    color: rgb(65, 63, 61);
+}
+
+#tabListe{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    padding: 22px;
+    border-spacing: 0px 22px;
+    box-shadow: 3px 4px 4px 4px rgb(2, 2, 2);
+}
+
+th{
+    width: 12vw;
+    padding-bottom: 15px;
+    border-bottom: whitesmoke 3px solid;
+}
+
+td{
+    width: 12vw;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(58, 55, 55);
+}
+
+td.td-first{
+    border-left: rgb(255, 8, 91) 6px solid;
+}
+
+tr{
+    height: 45px;
+}
+
+#btn-acheter{
+    background-color: rgb(24, 255, 43);
+    border-radius: 3px;
+    border:none;
+    padding: 7px 11px 7px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+#btn-acheter:hover{
+    background-color: rgb(4, 119, 13);
+}

@@ -1,0 +1,39 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil>
+
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>NOM</th>
+                <th>TYPE</th>
+                <th>MONTANT</th>
+                <th>VALEUR</th>
+                <th>CODE</th>
+                <th>Acheter</th>
+            </tr>
+            
+            <tr *ngFor="let offre of listOffres,let i = index" >
+                <td class="td-first">{{ listOffres[i].nom }}</td>
+                <td>{{ listOffres[i].type }}</td>
+                <td>{{ listOffres[i].montant }} Ar</td>
+                <td>{{ listOffres[i].valeur }}</td>
+                <td>{{ listOffres[i].code }}</td>
+                <td>
+                    <a [routerLink]="['/acheterOffre' , listOffres[i].id_offre ]" routerLinkActive="active">
+                        <button id="btn-acheter"> Acheter </button>
+                    </a>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+
+<br>

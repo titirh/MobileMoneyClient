@@ -1,0 +1,76 @@
+body{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#intro{
+    display: flex;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 2vw auto 0vw 10vw;
+    color: rgb(65, 63, 61);
+}
+
+#SoldeCredit{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    padding: 20px 12% 10px 0px;
+
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+}
+.soldeTitle{
+    color: rgb(253, 182, 29);
+}
+.solde{
+    order: 1;
+}
+.credit{
+    order: 2;
+}
+
+#ListeOffres{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px 5px 30px 5px;
+    padding: 5px 5% 5px 5%;
+}
+
+#SingleOffre{
+    background-color: rgb(15, 15, 15);
+    margin: 20px 10px 10px 10px;
+    padding: 5px 20px 30px 20px;
+    width: 40%;
+    min-width: 320px;
+    
+    box-shadow: 1px 1px 15px 5px  rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.nomOffre{
+    padding: 6px 0px 10px 0px;
+    margin-bottom: 17px;
+
+    text-align: center;
+    border-bottom: solid 1px rgb(221, 5, 95);
+    color: rgb(216, 18, 100);
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.valeurOffre{
+    padding: 2px 8px 2px 16px;
+
+    justify-items: flex-end;
+    font-size: 110%;
+    border-left: rgb(3, 248, 36) solid 5px;
+}

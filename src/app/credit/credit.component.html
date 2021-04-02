@@ -1,0 +1,22 @@
+<ns-navigation-offre></ns-navigation-offre>
+<body> 
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <ns-profil></ns-profil> 
+
+    <div id="formLogin">
+        <form (ngSubmit)="SubmitCredit()">
+            
+            <h3>CREDIT</h3>
+
+            <label>Montant  : </label>
+            <input id="i1" type="text" [(ngModel)]="modelCredit" name="montant" ><br><br>
+
+            <input type="submit"  name="submit" value="Crediter compte"> <br><br>    
+        </form>
+    </div>
+</body>
+
+
