@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { map } from "rxjs/operators";
 import { Appel } from "../classes/Appel";
+import { User } from "../classes/User";
 
 @Injectable({
     providedIn: 'root'
@@ -9,7 +10,8 @@ import { Appel } from "../classes/Appel";
 
 export class AppelService{
 
-    private readonly urlWS = 'http://localhost:8080/WSMobileMoney/webresources';
+    u: User = new User(0,"0","0","0","0");
+private readonly urlWS = this.u.getUrl();
     
     public optionRequete = {
         headers: new HttpHeaders({
